@@ -7,12 +7,13 @@ namespace Projetos_C_.Models
 {
     public class Pessoa
     {
-        public string Nome { get; set; }
-        public int Idade { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
 
         public void Apresentar()
         {
-            Console.WriteLine($"Olá, meu nome é {Nome}, e tenho {Idade} anos");
+            Console.WriteLine($"Hi, my name is " + 
+            $"{Name}, \ne tenho {Age} anos");
         }
     }
 }
