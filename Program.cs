@@ -1,27 +1,53 @@
 ﻿using Projetos_C_.Models;
 
+Calculadora calc = new Calculadora();
 
-int quantidadeEmEstoque = 10;
-int quantidadeEmCompra = 1;
-bool possivelVenda = quantidadeEmCompra > 0 && quantidadeEmEstoque >= quantidadeEmCompra;
+calc.Somar(1, 2);
+calc.Subtrair(10, 5);
+calc.Multiplicar(5, 5);
+calc.Dividir(10, 2);
+calc.Potencia(10, 2);
+calc.Cosseno(80);
+calc.Seno(30);
+calc.Tangente(30);
+calc.RaizQuadrada(9);
+//Console.WriteLine("Digite uma letra: ");
+//string letra = Console.ReadLine();
+
+//switch (letra)
+//{
+//    case "a":
+//    case "e":
+//    case "i":
+//    case "o":
+//    case "u":
+//        Console.WriteLine("Vogal");
+//        break;
+//    default:
+//        Console.WriteLine("Não é uma vogal");
+//        break;
+//}
+//int quantidadeEmEstoque = 10;
+//int quantidadeEmCompra = 1;
+//bool possivelVenda = quantidadeEmCompra > 0 && quantidadeEmEstoque >= quantidadeEmCompra;
 
 
-Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
-Console.WriteLine($"Quantidade em compra: {quantidadeEmCompra}");
-Console.WriteLine($"É possivel realizar a venda? {possivelVenda}");
+//Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
+//Console.WriteLine($"Quantidade em compra: {quantidadeEmCompra}");
+//Console.WriteLine($"É possivel realizar a venda? {possivelVenda}");
 
-if(quantidadeEmCompra == 0)
-{
-    Console.WriteLine("Venda Invalida");
-}
-else if(possivelVenda)
-{
-    Console.WriteLine("Venda realizada");
-}
-else
-{
-    Console.WriteLine("Desculpe, não temos a quantidade em estoque");
-}
+//if(quantidadeEmCompra == 0)
+//{
+//    Console.WriteLine("Venda Invalida");
+//}
+//else if(possivelVenda)
+//{
+//    Console.WriteLine("Venda realizada");
+//}
+//else
+//{
+//    Console.WriteLine("Desculpe, não temos a quantidade em estoque");
+//}
 
 
 //string a = "15-";
